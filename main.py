@@ -15,13 +15,13 @@ The plan of the program:
 """
 
 def main():
-    cap = cv2.VideoCapture("/home/anna/PycharmProjects/test_problem/video.mp4")
+    cap = cv2.VideoCapture("/home/anna/PycharmProjects/test_assignment/video.mp4")
     frame_width = int(cap.get(3))
     frame_height = int(cap.get(4))
 
     size = (frame_width, frame_height)
-    my_image = cv2.imread("/home/anna/PycharmProjects/test_problem/my_image.JPG")
-    result = cv2.VideoWriter('filename.avi',
+    my_image = cv2.imread("/home/anna/PycharmProjects/test_assignment/my_image.JPG")
+    result = cv2.VideoWriter('anna_kopatko_test.avi',
                              cv2.VideoWriter_fourcc(*'MJPG'),
                              50, size)
 
